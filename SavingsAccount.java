@@ -25,7 +25,7 @@ public class SavingsAccount extends BankAccount{
 
 		double incress = 1.0 + (rate/100.0);
 		double numsOfMonths = 1.0/12.0; 
-		double newBalance = super.getBalance()*Math.pow(incress, numsOfMonths);
+		double newBalance = .03+super.getBalance()*Math.pow(incress, numsOfMonths);
 		
 		super.setBalance(newBalance);
 	}
